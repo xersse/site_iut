@@ -1,11 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
     <title>Site IUT</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <header>
+        <div class="header-img">
+          <div>
+            <img src="./assets/images/iutLogo.png" alt="Logo de l'IUT Toulouse">
+            <img src="./assets/images/uniLogo.png" alt="Logo de l'université">
+          </div>
+          <img src="./assets/images/iutInfoLogo.png" alt="Logo de l'IUT Informatique">
+        </div>
+        <div class="header-links">
+          <a href="">Acceuil</a>
+          <a href="">Présentation du BUT</a>
+          <a href="">Compétences</a>
+          <a href="">Contact</a>
+        </div>
+    </header>
+
+    <!-- Historique du BUT -->
+    <article class="article">
+      <div class="image">
+        <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie" target="_blank">
+          <img src="./assets/images/hisotrique.webp" alt="Historique du BUT">
+        </a>
+      </div>
+      <div class="text">
+        <h2>Historique du BUT</h2>
+        <p>
+          Le Bachelor Universitaire de Technologie (BUT) est une formation universitaire en France, <br/> créé en 2019 sanctionnant les trois premières années d'études dans un institut universitaire de technologie (IUT). 
+          <br/>Pour plus d'informations, visitez <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie" target="_blank">Wikipedia</a>.
+        </p>
+      </div>
+    </article>
+
+    <!-- IUT Informatique Toulouse Rangueil -->
+    <article class="article">
+      <div class="image">
+        <a href="./src/contact.html" target="_blank">
+          <img src="./assets/images/info.webp" alt="IUT Informatique Toulouse Rangueil">
+        </a>
+      </div>
+      <div class="text">
+        <h2>IUT Informatique Toulouse Rangueil</h2>
+        <p>Découvrez l'histoire de l'IUT, ses programmes et ses contacts.</p>
+        <ul>
+          <li>Email: <a href="mailto:contact@iut.fr">contact@iut.fr</a></li>
+          <li>Téléphone: <a href="tel:+33562258000">05 62 25 80 00</a></li>
+          <li>Site Web: <a href="https://iut.univ-toulouse.fr" target="_blank">iut.univ-toulouse.fr</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Liste des compétences -->
+    <article class="article skills">
+      <div class="block">
+        <img src="./assets/images/competence.webp" alt="Bloc de compétence 1">
+        <ul>
+          <li><strong>Compétence 1</strong>: Réaliser un développement d'application</li>
+          <li><strong>Compétence 2</strong>: Optimiser une application</li>
+          <li><strong>Compétence 3</strong>: administrer des systèmes d'information communiquant complexe</li>
+        </ul>
+      </div>
+      <div class="block">
+        <img src="./assets/images/competence.webp" alt="Bloc de compétence 2">
+        <ul>
+          <li><strong>Compétence 4</strong>: gérer des données de l'information</li>
+          <li><strong>Compétence 5</strong>: construire un proget</li>
+          <li><strong>Compétence 6</strong>: collaborer au seins d'une équipe infomatique</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Vie Étudiante -->
+    <article class="article">
+      <div class="text">
+        <h2>Vie Étudiante</h2>
+        <p>
+          Découvrez toutes les informations concernant la restauration, le sport et la culture pour les étudiants.
+        </p>
+      </div>
+      <div class="image">
+        <a href="./src/restoration.html">
+          <img src="./assets/images/vieetu.webp" alt="Vie Étudiante">
+        </a>
+      </div>
+    </article>
+
+    <footer>
+      <div class="footer-plan">
+        <h3>Plan du site</h3>
+        <a href="./index.html">Accueil</a>
+        <a href="./src/presentation.html">Présentation</a>
+        <a href="./src/competence1.html">Compétences</a>
+        <a href="./src/contact.html">Contact</a>
+        <a href="./src/restoration.html">Restoration</a>
+      </div>
+      <div class="footer-rgpd">
+        <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+      </div>
+      <div class="footer-entreprise">
+        <h3>Studio Jokair</h3>
+        <a href="https://www.digitalportfolio.fr/">Verbrugghe Anton</a>
+        <a href="#">Hani Benassou Ouassou</a>
+        <a href="#">Joan Diaz</a>
+        <a href="#">Larmine Mohamed</a>
+      </div>
+    </footer>
 </body>
 </html>
+
+
