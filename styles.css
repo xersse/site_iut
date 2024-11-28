@@ -6,6 +6,10 @@
     --light-gray: #F5F5F5;
     --dark-gray: #2C2C2C;
   }
+
+  html {
+    scroll-behavior: smooth; /* Active le défilement fluide pour tout le document */
+}
   
 
 * {
@@ -31,6 +35,24 @@ body {
 main {
     padding-top: 60px; /* Ajuste en fonction de la hauteur totale de `header-img` + `header-links` */
 }
+
+.fixed-link {
+    position: fixed; /* Permet de le maintenir à une position fixe par rapport à la fenêtre */
+    bottom: 10px;    /* Distance depuis le bas de la fenêtre */
+    right: 10px;     /* Distance depuis le bord droit de la fenêtre */
+    background-color: #007BFF; /* Couleur de fond */
+    color: white;    /* Couleur du texte */
+    padding: 10px 15px; /* Espacement intérieur */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    transition: background-color 0.3s ease; /* Animation pour le changement de couleur */
+}
+
+.fixed-link:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
 
 
 
@@ -289,8 +311,7 @@ footer a:hover{
 
 /* Competence */
 
-.page-container {
-    background-color: var(--white); 
+.page-container { 
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
