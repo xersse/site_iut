@@ -4,36 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css"> <!-- Lien vers le CSS -->
 </head>
 <body>
+
     <header>
-        <h1>Contact</h1>
-        <p>Envoyez-nous un message et nous reviendrons vers vous rapidement.</p>
+        <div class="header-img">
+            <div>
+                <img src="../assets/images/iutLogo.png" alt="Logo de l'IUT Toulouse">
+                <img src="../assets/images/uniLogo.png" alt="Logo de l'université">
+            </div>
+            <img src="../assets/images/iutInfoLogo.png" alt="Logo de l'IUT Informatique">
+        </div>
+        <div class="header-links">
+            <a href="/">Accueil</a>
+            <a href="">Présentation du BUT</a>
+            <div class="dropdown-item">
+                <a href="./competence.html">Compétences</a>
+                <ul class="dropdown-content">
+                    <li><a href="./competence.html#1">Compétence 1</a></li>
+                    <li><a href="./competence.html#2">Compétence 2</a></li>
+                    <li><a href="./competence.html#3">Compétence 3</a></li>
+                    <li><a href="./competence.html#4">Compétence 4</a></li>
+                    <li><a href="./competence.html#5">Compétence 5</a></li>
+                    <li><a href="./competence.html#6">Compétence 6</a></li>
+                </ul>
+            </div>
+            <a href="./contact.html">Contact</a>
+        </div>
     </header>
-    <main>
-        <form class="contact-form">
-            <h2>Formulaire de Contact</h2>
-            <div class="form-group">
-                <i>👤</i>
-                <input type="text" placeholder="Nom" required>
+
+    <br/>
+
+    <h1 class="center-text">Contactez nous</h1>
+    <p class="center-text">Veuillez remplir le formulaire ou consulter les informations ci-dessous pour nous contacter.</p>
+
+    <div class="container">
+        <!-- Section gauche -->
+        <div class="left-section">
+            <h2>Campus de l'IUT</h2>
+            <img src="https://media.licdn.com/dms/image/v2/C4E1BAQEUdXkuR5gFYw/company-background_10000/company-background_10000/0/1643362797628/iut_paul_sabatier_cover?e=2147483647&v=beta&t=YJroXm_7raDFsWtzkLMLP_6IrQCfAqu9lFLDcLFAKuM" alt="Image du campus de l'IUT">
+            <p><strong>Adresse :</strong><br>
+                115C Route de Narbonne<br>31077, TOULOUSE
+            </p>
+        </div>
+
+        <!-- Section droite -->
+        <div class="right-section">
+            <form>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Conteneur image et texte -->
+    <div class="image-text-container">
+        <a href="https://www.google.com/maps/place/IUT+Toulouse/@43.604834,1.444154,17z/data=!3m1!4b1!4m5!3m4!1s0x12c97f68f5b461a9:0x42966d5977b1    
+        3!8m2!3d43.604834!4d1.446343" target="_blank">
+            <div class="image-box">
+                <img src="https://th.bing.com/th/id/OIP.ohdtwB-jKz9ibT_sPKQNMwHaEl?rs=1&pid=ImgDetMain" alt="Carte Google Maps">
             </div>
-            <div class="form-group">
-                <i>📧</i>
-                <input type="email" placeholder="Adresse e-mail" required>
-            </div>
-            <div class="form-group">
-                <i>🔗</i>
-                <input type="text" placeholder="Site web (facultatif)">
-            </div>
-            <div class="form-group">
-                <i>✍</i>
-                <textarea placeholder="Votre message..." rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Envoyer</button>
-            </div>
-        </form>
-    </main>
+        </a>
+        <div class="text-box">
+            <p>
+                Le BUT Informatique est un Bachelor de l'enseignement supérieur public, reconnu par l'État.
+                Il forme des techniciennes supérieures et des techniciens supérieurs qui participent à la
+                conception, à la réalisation et à la mise en œuvre de solutions informatiques pour répondre
+                aux besoins des utilisateurs dans les Entreprises de Services du Numérique (ESN) et des secteurs
+                d'activités comme les sociétés de télécommunications, les industries, les services publics ou
+                encore les éditeurs de logiciels.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-plan">
+          <h3>Plan du site</h3>
+          <a href="./index.html">Accueil</a>
+          <a href="./src/presentation.html">Présentation</a>
+          <a href="./src/competence1.html">Compétences</a>
+          <a href="./src/contact.html">Contact</a>
+          <a href="./src/restoration.html">Restoration</a>
+        </div>
+        <div class="footer-rgpd">
+          <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
+        </div>
+        <div class="footer-entreprise">
+          <h3>Studio Jokair</h3>
+          <a href="https://www.digitalportfolio.fr/">Verbrugghe Anton</a>
+          <a href="#">Hani Benassou Ouassou</a>
+          <a href="#">Joan Diaz</a>
+          <a href="#">Larmine Mohamed</a>
+        </div>
+      </footer>
+
 </body>
 </html>
