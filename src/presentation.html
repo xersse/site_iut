@@ -3,54 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation - Troisième Année</title>
+    <title>Présentation du BUT Informatique</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <h1>Présentation du BUT - Troisième Année</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a href="./premiere_annee.html">Première Année</a></li>
-                <li><a href="./deuxieme_annee.html">Deuxième Année</a></li>
-                <li><a href="./troisieme_annee.html">Troisième Année</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header id="top">
+        <div class="header-img">
+            <div>
+                <img src="../assets/images/iutLogo.webp" alt="Logo de l'IUT Toulouse" />
+                <img src="../assets/images/uniLogo.webp" alt="Logo de l'université" />
+            </div>
+            <img src="../assets/images/iutInfoLogo.webp" alt="Logo de l'IUT Informatique" />
+        </div>
+        <div class="header-links">
+            <a href="/">Accueil</a>
+            <a href="./presentation.html">Présentation du BUT</a>
+            <div class="dropdown-item">
+                <a href="./competence.html">Compétences</a>
+                <ul class="dropdown-content">
+                    <li><a href="#1">Compétence 1</a></li>
+                    <li><a href="#2">Compétence 2</a></li>
+                    <li><a href="#3">Compétence 3</a></li>
+                    <li><a href="#4">Compétence 4</a></li>
+                    <li><a href="#5">Compétence 5</a></li>
+                    <li><a href="#6">Compétence 6</a></li>
+                </ul>
+            </div>
+            <a href="./contact.html">Contact</a>
+        </div>
     </header>
 
-    <section id="troisieme" class="coefficients-section">
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th>Ress</th>
-                    <th>Compétance 1</th>
-                    <th>Compétance 2</th>
-                    <th>Compétance 3</th>
-                    <th>Compétance 4</th>
-                    <th>Compétance 6</th>
-                </tr>
-                <tr>
-                    <td>R1</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                </tr>
-                <tr>
-                    <td>R2</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                    <td>coefficient</td>
-                </tr>
-            </table>
+    <main>
+        <!-- Section principale -->
+        <section class="main-section">
+            <div class="text-and-table">
+                <div class="text-block">
+                    <h3>Présentation des ressources et explication pour valider l'année</h3>
+                    <p>Pour valider la première année du BUT Informatique, les étudiants doivent respecter des critères académiques et professionnels précis, centrés sur l'acquisition des compétences et la réussite des unités d’enseignement (UE). Les compétences du BUT sont organisées en blocs appelés BLCC, regroupant plusieurs UE et projets concrets, notamment des Situations d’Apprentissage et d’Évaluation (SAÉ), qui permettent de mesurer la maîtrise des savoir-faire et des connaissances.
+
+                        Pour une validation automatique, l’étudiant doit obtenir une note égale ou supérieure à 10/20 sur au moins quatre compétences, et aucune compétence ne doit être notée en dessous de 8/20. Si ces critères ne sont pas remplis, le passage en deuxième année est soumis à l’évaluation d’un jury. Ce dernier peut valider des compétences insuffisamment acquises (ACQJ), autoriser l’étudiant à poursuivre l’année suivante tout en complétant les compétences manquantes (AUTJ), demander un redoublement (AJ), ou, dans les cas les plus graves, prononcer une exclusion (NAR).
+                        
+                        En cas de redoublement, l’étudiant conserve les notes des UE déjà validées, mais devra repasser les évaluations des compétences non acquises. Les rattrapages sont organisés pour permettre à l’étudiant de combler ses lacunes. Cependant, pour progresser en troisième année, toutes les compétences et les UE des deux premières années doivent être validées.
+                        
+                        Ainsi, la validation de la première année repose sur une évaluation équilibrée entre la maîtrise des compétences, la réussite académique globale, et l’assiduité. Un travail régulier, une participation active et une bonne gestion des priorités sont essentiels pour réussir cette étape et poursuivre sereinement vers l’obtention du diplôme.
+                    </p>
+                </div>
+                <div class="table-block">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ressources/Compétences</th>
+                                <th>C1</th>
+                                <th>C2</th>
+                                <th>C3</th>
+                                <th>C4</th>
+                                <th>C5</th>
+                                <th>C6</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>R1.01</td><td>42</td><td>24</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>R1.02</td><td>12</td><td></td><td></td><td></td><td>18</td><td>5</td></tr>
+                            <tr><td>R1.03</td><td></td><td>3</td><td>21</td><td></td><td></td><td></td></tr>
+                            <tr><td>R1.04</td><td></td><td>3</td><td>21</td><td></td><td></td><td></td></tr>
+                            <tr><td>R1.05</td><td></td><td></td><td></td><td>36</td><td></td><td></td></tr>
+                            <tr><td>R1.06</td><td></td><td>15</td><td></td><td>18</td><td></td><td></td></tr>
+                            <tr><td>R1.07</td><td></td><td>15</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>R1.08</td><td></td><td></td><td></td><td></td><td>27</td><td>11</td></tr>
+                            <tr><td>R1.09</td><td></td><td></td><td></td><td>6</td><td></td><td>11</td></tr>
+                            <tr><td>R1.10</td><td>6</td><td></td><td>12</td><td></td><td></td><td>11</td></tr>
+                            <tr><td>R1.11</td><td></td><td></td><td>6</td><td></td><td>15</td><td>11</td></tr>
+                            <tr><td>R1.12</td><td></td><td></td><td></td><td></td><td></td><td>11</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sections personnalisées -->
+        <section class="custom-section section-1">
+            <h2>Section 1</h2>
+            <a href="./competence.html#1">
+                <img src="../assets/images/first.webp" alt="Image section 1" class="section-image">
+            </a>
+            <div class="section-cases">
+                <div class="case">Initiation au développement<br>R1.01</div>
+                <div class="case">Développement d'interfaces web<br>R1.02</div>
+                <div class="case">Anglais technique<br>R1.10</div>
+            </div>
+        </section>
+        <section class="custom-section section-2">
+            <h2>Section 2</h2>
+            <div class="section-cases">
+                <div class="case">Initiation au développement<br>R1.01</div>
+                <div class="case">Introduction à l'architecture des ordinateurs<br>R1.03</div>
+                <div class="case">Introduction aux systèmes<br>R1.04</div>
+                <div class="case">Anglais technique<br>R1.10</div>
+                <div class="case">Bases de la communication<br>R1.11</div>
+            </div>
+            <a href="./competence.html#2">
+                <img src="../assets/images/second.webp" alt="Image section 2" class="section-image">
+            </a>
+        </section>
+        <section class="custom-section section-3">
+            <h2>Section 3</h2>
+            <a href="./competence.html#3">
+                <img src="../assets/images/third.webp" alt="Image section 3" class="section-image">
+            </a>
+            <div class="section-cases">
+                <div class="case">Introduction à l'architecture des ordinateurs<br>R1.03</div>
+                <div class="case">Introduction aux systèmes<br>R1.04</div>
+                <div class="case">Anglais technique<br>R1.10</div>
+                <div class="case">Bases de la communication<br>R1.11</div>
+            </div>
+        </section>
+        <section class="custom-section section-4">
+            <h2>Section 4</h2>
+            <div class="section-cases">
+                <div class="case">Introduction aux bases de données et SQL<br>R1.05</div>
+                <div class="case">Mathématiques discrètes<br>R1.06</div>
+                <div class="case">Economie durable et numérique<br>R1.09</div>
+            </div>
+            <a href="./competence.html#4">
+                <img src="../assets/images/fourth.webp" alt="Image section 4" class="section-image">
+            </a>
+        </section>
+        <section class="custom-section section-5">
+            <h2>Section 5</h2>
+            <a href="./competence.html#5">
+                <img src="../assets/images/fifth.webp" alt="Image section 5" class="section-image">
+            </a>
+            <div class="section-cases">
+                <div class="case">Développement d'interfaces web<br>R1.02</div>
+                <div class="case">Gestion de projet & des organisations<br>R1.08</div>
+                <div class="case">Bases de la communication<br>R1.11</div>
+            </div>
+        </section>
+        <section class="custom-section section-6">
+            <h2>Section 6</h2>
+            <div class="section-cases">
+                <div class="case">Développement d'interfaces web<br>R1.02</div>
+                <div class="case">Gestion de projet & des organisations<br>R1.08</div>
+                <div class="case">Economie durable et numérique<br>R1.09</div>
+                <div class="case">Anglais technique<br>R1.10</div>
+                <div class="case">Bases de la communication<br>R1.11</div>
+                <div class="case">Projet professionnel et personnel<br>R1.12</div>
+            </div>
+            <a href="./competence.html#6">
+                <img src="../assets/images/six.webp" alt="Image section 6" class="section-image">
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-plan">
+            <h3>Plan du site</h3>
+            <a href="/">Accueil</a>
+            <a href="./presentation.html">Présentation</a>
+            <a href="./competence.html">Compétences</a>
+            <a href="./contact.html">Contact</a>
+            <a href="https://www.crous-toulouse.fr/se-restaurer/" target="_blank" rel="noopener noreferrer">Restauration</a>
         </div>
-        <div class="explanation">
-            <p>Explications des règles pour la validation de l'année...</p>
+        <div class="footer-rgpd">
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a>
         </div>
-    </section>
+        <div class="footer-entreprise">
+            <h3>Studio Jokair</h3>
+            <a href="#">Verbrugghe Anton</a>
+            <a href="#">Hani Benassou Ouassou</a>
+            <a href="#">Joan Diaz</a>
+            <a href="#">Larbi Mohamed</a>
+        </div>
+    </footer>
 </body>
 </html>
+
